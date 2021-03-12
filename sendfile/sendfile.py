@@ -2,18 +2,18 @@
 ##without having to emeil or log into whatappweb ect
 
 
-import requests
-from bs4 import BeautifulSoup
-import datetime
+# import requests
+# from bs4 import BeautifulSoup
+# import datetime
 import telegram
-import time
+# import time
 import pyautogui
 
 my_token = # removed for security purposed
 chatid = # chat id to whom to send the file
 
 ##get file name from user
-myfile =  pyautogui.prompt(text='Transfer name?', title='Card Name', default='')
+myfile =  pyautogui.prompt(text='File name?', title='Card Name', default='')
 myfile = myfile[1:-1]
 
 def send(myfile, chat_id, token=my_token):
@@ -22,4 +22,3 @@ def send(myfile, chat_id, token=my_token):
 
 
 send(myfile, chatid)
-
